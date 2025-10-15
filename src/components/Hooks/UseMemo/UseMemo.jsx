@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from "react";
 
-
-const CalculateBonus=({role,salary})=>
+const CalculateBonus=React.memo(({role,salary})=>
 {
 
      const bonus=useMemo(()=>
@@ -31,7 +30,7 @@ const CalculateBonus=({role,salary})=>
             <p>Bonus :{bonus}</p>
         </div>
     );
-}
+})
 
 
 const UseMemo=()=>

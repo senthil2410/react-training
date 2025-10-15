@@ -116,9 +116,7 @@ export  const App = () => {
           <Route path="uselocal/userinfo" element={<UserInfo />} />
           <Route path="/usetransition" element={<UseTransition/>}/>
           <Route path="/uselayout" element={<UseLayoutEffect />} />
-
-          {AppRoutes()}
-           
+  
          </Routes>
       </AuthProvider>
     </Router>
